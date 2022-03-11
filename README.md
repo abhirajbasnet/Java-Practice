@@ -1,2 +1,1 @@
-# Java-Practice
-# Java-Practice
+# Java-Projects
