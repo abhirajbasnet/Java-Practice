@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class soFarLearned {
 
     public static void main(String[] arg){
@@ -42,7 +44,63 @@ public class soFarLearned {
         System.out.println("Maximum Long Value = " + myMaximumLongValue);
 
         //Casting which means to treat or convert a number from one type to another
-        int value = 50000;
+        short newShort = (short) (myMaximumShortValue / 2);
+        System.out.println(newShort);
+        
+        // 1 byte = 8 bits.
+        //byte has size of  1byte  store numbers from -128 to 127
+        //Short has size of 2 bytes stores numbers from -32,768 to 32,767
+        //int has size of 4 bytes stores numbers from -2147,483,648 to 2147,483,647
+        //long has size of 8 bytes  stores numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+
+        /**
+         * if we have to store the precise value we use the float and double primitive data types.
+         */
+        
+        float myFloatValue = 10;
+        float myMinimumFloatValue = Float.MIN_VALUE;
+        float myMaximumFloatValue = Float.MAX_VALUE;
+        System.out.println("Minimum Float Value = " + myMinimumFloatValue);
+        System.out.println("Maximum Float Value = " + myMaximumFloatValue);
+
+        double myDoubleValue = 10;
+        double myMinimumDoubleValue = Double.MIN_VALUE;
+        double myMaximumDoubleValue = Double.MAX_VALUE;
+        System.out.println("Minimum Double Value = " + myMinimumDoubleValue);
+        System.out.println("Maximum Double Value = " + myMaximumDoubleValue);
+
+        //lets see how the float, int and double data types print the data
+
+        int myIntNumber = 10;
+        float myFloatNumber = 10;
+        double myDoubleNumber = 10;
+        System.out.println("myIntNumber = " + myIntNumber / (3));
+        System.out.println("myFloatNumber = " + myFloatNumber / (3));
+        System.out.println("myDoubleNumber = " + myDoubleNumber / (3));
+
+        /**
+         * Next data types is boolean and char
+         */
+
+        //boolean store the value in 1 or 0 and in true or false
+        boolean isTrueValue = true;
+        boolean isFalseValue = false;
+        //when writing the method or giving the name of the variable. The variable name is always written in the question format
+        boolean isStudent =true;
+        System.out.println("Following people are student = " + isStudent);
+
+        //char data types store the single character
+        char myCharIs = 'A';
+        //char also store the unique value too like
+        char myCopyrightValue = '\u00A9';
+        System.out.println("myCopyrightValue = " + myCopyrightValue);
+
+        //Other data types are String,
+
+
+
+
+
 
 
 
