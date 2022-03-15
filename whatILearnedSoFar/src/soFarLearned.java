@@ -157,7 +157,12 @@ public class soFarLearned {
         String upperCase = "abcd";
         System.out.println("Uppercase = " + upperCase.toUpperCase());
         String lowercase = "ABCD";
-        System.out.println("Lowercase = " + lowercase.toLowerCase());
+        String  newLowerCase = "ASDFGH34543523JKL";
+        System.out.println("LowerCase = " + lowercase);
+        System.out.println("Lowercase changed to lowercase = " + lowercase.toLowerCase());
+        System.out.println("Replace lowercase = " + lowercase.replaceAll(lowercase, newLowerCase));
+        System.out.println( "Returns the character at specified index = " + newLowerCase.charAt(7));
+        System.out.println(newLowerCase.codePointAt(7));
 
 
 
