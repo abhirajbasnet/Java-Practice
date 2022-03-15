@@ -95,7 +95,75 @@ public class soFarLearned {
         char myCopyrightValue = '\u00A9';
         System.out.println("myCopyrightValue = " + myCopyrightValue);
 
-        //Other data types are String,
+        //Java operators
+        /**
+         * + addition
+         * - subtraction
+         *  / division
+         *  * multiplication
+         *  % modulus - returns the division remainder
+         *  ++ increases the value of the variable by 1
+         *  -- decreases the value of the variable by 1
+         */
+        //Same procedure goes with the other primitive types of the java byte, short, int, long, float, double
+        //addition
+        int newNumber = 10;
+        int secondNumber = 20;
+        int totalNumber = newNumber + secondNumber;
+        System.out.println("Total Number =" + totalNumber);
+
+        //subtraction
+        int newTotalNumber = totalNumber -20;
+        System.out.println("New total number = " + newTotalNumber);
+
+        //division
+        int newDividedNumber = newTotalNumber / 3;
+        System.out.println("New divided number = " + newDividedNumber);
+
+        //Multiplication
+        int newMultipliedNumber = totalNumber * 3;
+        System.out.println("New Multiplied Number =" + newMultipliedNumber);
+
+        //Modulus
+        int newModulusValue = 10 % 3;
+        System.out.println("New modulus value = " + newModulusValue);
+
+        //++ increment
+        int newIncrementValue = 5;
+        newIncrementValue ++;
+        System.out.println("New Increment Value = " + newIncrementValue );
+
+        //--decrement
+        int newDecrementValue = 8;
+        newDecrementValue --;
+        System.out.println("New Decrement Value = " + newDecrementValue);
+
+        /**
+         * Strings
+         */
+
+        //creating the variable with the String Data type
+        String newName = "Abhi";
+        System.out.println("New Name = " + newName);
+
+        //let's say if I want to  know the length of the string variable then we use length method
+        //String in Java is actually a Object which contain methods that can perform certain operations on String.
+        String alphabets = "asdfghjklqwertyuiopzxc123455vbnm";
+
+        //to know the length of the String we use .length() method for example
+        System.out.println("String Alphabets length = " + alphabets.length()); //which prints the total number that contained in the string
+
+        //we can use other method on string such as uppercase and lowercase to change all the String variable to lower or uppercase
+        String upperCase = "abcd";
+        System.out.println("Uppercase = " + upperCase.toUpperCase());
+        String lowercase = "ABCD";
+        System.out.println("Lowercase = " + lowercase.toLowerCase());
+
+
+
+
+
+
 
 
 
