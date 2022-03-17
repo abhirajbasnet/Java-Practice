@@ -1,5 +1,7 @@
 package javapractice.abhi;
 
+import jdk.swing.interop.SwingInterOpUtils;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -48,6 +50,24 @@ public class Main {
             System.out.println("It is not an Alien");
             System.out.println("I am afraid of an Alien");
         }
+
+        boolean isNotAlien = true;
+        if (isNotAlien == true) {
+            System.out.println("It is not an Alien");
+            System.out.println("Thank god it is not Alien");
+        }
+
+        int topScore = 80;
+        if (topScore < 100){
+            System.out.println("You got the high Score!");
+        }
+
+        int secondTopScore =81;
+        if (topScore > secondTopScore && topScore < 100 ){
+            System.out.println("Greater than top score and less than 100");
+        }
+
+
 
 
 
