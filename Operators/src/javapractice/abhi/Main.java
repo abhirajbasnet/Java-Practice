@@ -62,10 +62,19 @@ public class Main {
             System.out.println("You got the high Score!");
         }
 
-        int secondTopScore =81;
-        if (topScore > secondTopScore && topScore < 100 ){
+        int secondTopScore = 95;// logical and operator &&
+        if ((topScore > secondTopScore) && (topScore < 100)){
             System.out.println("Greater than top score and less than 100");
         }
+
+        if ((topScore > 90) || (secondTopScore <= 90) ){
+            System.out.println("Either or both of the conditions are true");
+        }
+
+
+
+
+
 
 
 
