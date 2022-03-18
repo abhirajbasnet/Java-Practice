@@ -164,6 +164,26 @@ public class soFarLearned {
         System.out.println( "Returns the character at specified index = " + newLowerCase.charAt(7));
         System.out.println(newLowerCase.codePointAt(7));
 
+        boolean isAlien = false;
+        if (isAlien == false){
+            System.out.println("I am scared");
+            System.out.println("What am i gonna do ");
+        }
+
+        int firstNum =10;
+        int secondNum = 50;
+        if (firstNum <= secondNum){
+            System.out.println("firstNumber is grater than second Number");
+        }
+        if ((firstNum < secondNum) && (firstNum <= secondNum)){
+            System.out.println("Return it");
+        }
+
+
+
+
+
+
 
 
 
