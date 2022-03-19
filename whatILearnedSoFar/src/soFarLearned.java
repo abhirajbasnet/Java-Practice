@@ -198,6 +198,21 @@ public class soFarLearned {
         boolean eighteenOrOver = numberOfStudent == 20 ? true :false;
         System.out.println(eighteenOrOver);
 
+        double doubleVlaue1 = 20.00d;
+        double doubleValue2 = 80.00d;
+
+        double totalValue = (doubleVlaue1 + doubleValue2) * 100.00d;
+        System.out.println("Total double value = " + totalValue);
+
+        double modulusValue = totalValue % 40.00d;
+        System.out.println("Modulus Double value = " + modulusValue);
+
+        boolean value = (modulusValue == 0) ? true : false;
+        System.out.println("Boolean Value " + value);
+        if (value != true){
+            System.out.println("Got Some remainder");
+
+        }
 
 
 
