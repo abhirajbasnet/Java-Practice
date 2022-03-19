@@ -178,6 +178,25 @@ public class soFarLearned {
         if ((firstNum < secondNum) && (firstNum <= secondNum)){
             System.out.println("Return it");
         }
+        boolean isCar = true;
+        if (isCar){
+            System.out.println("isCar");
+        }
+
+        boolean wasCar = isCar ==false? true : false;
+        if (wasCar){
+            System.out.println("Was car");
+        }
+
+        int numberOfStudent = 20;
+        if (numberOfStudent == 20){
+
+            System.out.println("Number of student = " + numberOfStudent);
+        }
+
+        //int eighteenOrOver = 40;
+        boolean eighteenOrOver = numberOfStudent == 20 ? true :false;
+        System.out.println(eighteenOrOver);
 
 
 
