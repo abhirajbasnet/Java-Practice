@@ -86,8 +86,20 @@ public class Main {
         boolean wasCar = isCar ? true : false;
         if (wasCar){
             System.out.println("wasCar is true");
-
         }
+
+        double myFirstValue = 20.00d;
+        double mySecondValue = 80.00d;
+        double totalValue = (myFirstValue + mySecondValue) * 100.00d;
+        System.out.println("My total Value = " + totalValue);
+        double modulus = totalValue % 40.00d;
+        System.out.println("Modulus Value = " + modulus);
+        boolean isNotRemainder = (modulus == 0) ? true : false;
+        System.out.println("isNotRemainder = " + isNotRemainder);
+        if (!isNotRemainder){
+            System.out.println("Got some remainder");
+        }
+
 
 
 
