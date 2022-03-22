@@ -2,7 +2,9 @@ import java.sql.SQLOutput;
 
 public class soFarLearned {
 
-    public static void main(String[] arg){
+    public static void main(String[] arg) {
+
+        calculateScore(true, 1000, 100, 10);
 
         //main code for the java code
         /*
@@ -46,7 +48,7 @@ public class soFarLearned {
         //Casting which means to treat or convert a number from one type to another
         short newShort = (short) (myMaximumShortValue / 2);
         System.out.println(newShort);
-        
+
         // 1 byte = 8 bits.
         //byte has size of  1byte  store numbers from -128 to 127
         //Short has size of 2 bytes stores numbers from -32,768 to 32,767
@@ -56,7 +58,7 @@ public class soFarLearned {
         /**
          * if we have to store the precise value we use the float and double primitive data types.
          */
-        
+
         float myFloatValue = 10;
         float myMinimumFloatValue = Float.MIN_VALUE;
         float myMaximumFloatValue = Float.MAX_VALUE;
@@ -86,7 +88,7 @@ public class soFarLearned {
         boolean isTrueValue = true;
         boolean isFalseValue = false;
         //when writing the method or giving the name of the variable. The variable name is always written in the question format
-        boolean isStudent =true;
+        boolean isStudent = true;
         System.out.println("Following people are student = " + isStudent);
 
         //char data types store the single character
@@ -113,7 +115,7 @@ public class soFarLearned {
         System.out.println("Total Number =" + totalNumber);
 
         //subtraction
-        int newTotalNumber = totalNumber -20;
+        int newTotalNumber = totalNumber - 20;
         System.out.println("New total number = " + newTotalNumber);
 
         //division
@@ -130,12 +132,12 @@ public class soFarLearned {
 
         //++ increment
         int newIncrementValue = 5;
-        newIncrementValue ++;
-        System.out.println("New Increment Value = " + newIncrementValue );
+        newIncrementValue++;
+        System.out.println("New Increment Value = " + newIncrementValue);
 
         //--decrement
         int newDecrementValue = 8;
-        newDecrementValue --;
+        newDecrementValue--;
         System.out.println("New Decrement Value = " + newDecrementValue);
 
         /**
@@ -157,45 +159,45 @@ public class soFarLearned {
         String upperCase = "abcd";
         System.out.println("Uppercase = " + upperCase.toUpperCase());
         String lowercase = "ABCD";
-        String  newLowerCase = "ASDFGH34543523JKL";
+        String newLowerCase = "ASDFGH34543523JKL";
         System.out.println("LowerCase = " + lowercase);
         System.out.println("Lowercase changed to lowercase = " + lowercase.toLowerCase());
         System.out.println("Replace lowercase = " + lowercase.replaceAll(lowercase, newLowerCase));
-        System.out.println( "Returns the character at specified index = " + newLowerCase.charAt(7));
+        System.out.println("Returns the character at specified index = " + newLowerCase.charAt(7));
         System.out.println(newLowerCase.codePointAt(7));
 
         boolean isAlien = false;
-        if (isAlien == false){
+        if (isAlien == false) {
             System.out.println("I am scared");
             System.out.println("What am i gonna do ");
         }
 
-        int firstNum =10;
+        int firstNum = 10;
         int secondNum = 50;
-        if (firstNum <= secondNum){
+        if (firstNum <= secondNum) {
             System.out.println("firstNumber is grater than second Number");
         }
-        if ((firstNum < secondNum) && (firstNum <= secondNum)){
+        if ((firstNum < secondNum) && (firstNum <= secondNum)) {
             System.out.println("Return it");
         }
         boolean isCar = true;
-        if (isCar){
+        if (isCar) {
             System.out.println("isCar");
         }
 
-        boolean wasCar = isCar ==false? true : false;
-        if (wasCar){
+        boolean wasCar = isCar == false ? true : false;
+        if (wasCar) {
             System.out.println("Was car");
         }
 
         int numberOfStudent = 20;
-        if (numberOfStudent == 20){
+        if (numberOfStudent == 20) {
 
             System.out.println("Number of student = " + numberOfStudent);
         }
 
         //int eighteenOrOver = 40;
-        boolean eighteenOrOver = numberOfStudent == 20 ? true :false;
+        boolean eighteenOrOver = numberOfStudent == 20 ? true : false;
         System.out.println(eighteenOrOver);
 
         double doubleVlaue1 = 20.00d;
@@ -209,34 +211,37 @@ public class soFarLearned {
 
         boolean value = (modulusValue == 0) ? true : false;
         System.out.println("Boolean Value " + value);
-        if (value != true){
+        if (value != true) {
             System.out.println("Got Some remainder");
 
         }
 
+        int firstNumber = 10;
+        int secondNumb = 20;
+        boolean bothNumberIsCorrect = true;
+        bothNumberIsCorrect = false;
+        int totalNumb = firstNumber + secondNumber;
+        System.out.println("Total Number = " + totalNumb);
+        totalNumb++;
+        System.out.println("Total Number after one increment = " + totalNumb);
+        if (!bothNumberIsCorrect) {
+            System.out.println("It is false");
+        } else {
+            System.out.println("It is true");
+        }
 
 
+    }
 
+    public static int calculateScore(boolean gameOver, int bonus, int score, int level ){
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        if (gameOver){
+            int finalScore = bonus + (score * level);
+            System.out.println("Final Score was " + finalScore);
+            return finalScore;
+        } else {
+            System.out.println("You still got to play more to score");
+        }
+       return -1;
     }
 }
