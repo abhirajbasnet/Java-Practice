@@ -230,18 +230,44 @@ public class soFarLearned {
             System.out.println("It is true");
         }
 
+//        boolean isStudentInSchool = true;
+//        int totalNumberOfClass = 10;
+//        int totalNumberOfStudents = 30;
+
+        totalNumberOfStudentsInASchool(true, 10, 30);
+        totalNumberOfStudentsInASchool(true, 9, 40);
+
+
+//        isStudentInSchool = true;
+//        totalNumberOfClass = 9;
+//        totalNumberOfStudents = 40;
+//        if (isStudentInSchool) {
+//            int totalStudentsInSchool = totalNumberOfStudents * totalNumberOfClass;
+//            System.out.println("The Total Number of Students in a School was " + totalStudentsInSchool);
+//        }
+
 
     }
 
-    public static int calculateScore(boolean gameOver, int bonus, int score, int level ){
+    public static void totalNumberOfStudentsInASchool(boolean isStudentInSchool, int totalNumberOfClass, int totalNumberOfStudents){
+        if (isStudentInSchool) {
+            int totalStudentsInSchool = totalNumberOfClass * totalNumberOfStudents;
+            System.out.println("The Total Number of Students in a School was " + totalStudentsInSchool);
+        }
+    }
+// what is methods -> it is a block of code only runs when we use them
+    // why methods is used -> to perform certain actions which is also known as functions
+    // why use method -> to define a code once and reuse it again and again
 
-        if (gameOver){
+    public static int calculateScore(boolean gameOver, int bonus, int score, int level) {
+
+        if (gameOver) {
             int finalScore = bonus + (score * level);
             System.out.println("Final Score was " + finalScore);
             return finalScore;
         } else {
             System.out.println("You still got to play more to score");
         }
-       return -1;
+        return -1;
     }
 }
