@@ -10,5 +10,7 @@ public class Main {
         System.out.println(leapYear);
         leapYear = LeapYear.isLeapYear(2000);
         System.out.println(leapYear);
+        leapYear = LeapYear.isLeapYear(2020);
+        System.out.println(leapYear);
     }
 }
