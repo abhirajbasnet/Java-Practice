@@ -1,10 +1,14 @@
 public class DecimalComparator {
 
-    public static boolean areEqualByThreeDecimal(double equal, double threeDecimal){
-        int a = (int) equal * 1000;
-        int b = (int) threeDecimal * 1000;
+    public static boolean areEqualByThreeDecimalPlaces(double a, double b) {
 
-        if(a == b){
+         a = a * 1000;
+         b = b * 1000;
+
+        int a1 = (int) a;
+        int b1 = (int) b;
+        
+        if(a1 == b1){
             System.out.println(true);
             return true;
         }
