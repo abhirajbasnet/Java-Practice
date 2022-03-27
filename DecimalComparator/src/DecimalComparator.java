@@ -7,7 +7,7 @@ public class DecimalComparator {
 
         int a1 = (int) a;
         int b1 = (int) b;
-        
+
         if(a1 == b1){
             System.out.println(true);
             return true;
