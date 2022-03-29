@@ -263,6 +263,7 @@ public class soFarLearned {
 //            System.out.println("The Total Number of Students in a School was " + totalStudentsInSchool);
 //        }
 
+        numberOfDays(4);
 
     }
 
@@ -335,8 +336,6 @@ public class soFarLearned {
 
     public static void numberOfDays(int days){
 
-        days = 7;
-
         switch (days){
 
             case 1:
@@ -360,10 +359,9 @@ public class soFarLearned {
             case 7:
                 System.out.println("Sunday");
                 break;
-
+            default:
+                System.out.println("Invalid Parameters");
         }
-
-
     }
 
 
