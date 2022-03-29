@@ -5,6 +5,16 @@ public class soFarLearned {
     public static void main(String[] arg) {
 
         calculateScore(true, 1000, 100, 10);
+        double centimeter = calculateFeetAndInches(7, 7);
+        System.out.println(centimeter);
+        if ( centimeter < 0){
+            System.out.println("Invalid Parameter");
+        }
+
+        double inches = calculateFeetAndInches(100);
+        if ( inches < 0){
+            System.out.println("Invalid Parameter");
+        }
 
         //main code for the java code
         /*
@@ -278,5 +288,32 @@ public class soFarLearned {
             return finalScore;
         }
         return -1;
+    }
+
+    public static double calculateFeetAndInches(double feet, double inches){
+
+        if( feet < 0 || inches < 0 || inches > 12){
+
+            System.out.println("Invalid Parameters");// this is the common way of validating the code
+            return -1;
+        }
+
+        double centimeter = (feet * 12) * 2.54;
+        centimeter += inches * 2.54; // which also can be written as centimeter = centimeter + inches * 12;
+        System.out.println(feet + " feet " + inches + " inches " + " = " + centimeter + " centimeter ");
+        return centimeter;
+    }
+
+    public static double calculateFeetAndInches(double inches){
+
+        if(inches < 0){
+
+            System.out.println("Invalid Inches");
+            return -1;
+        }
+
+        double centimeter = (int) inches / 12;
+        double remainingInches = (int) inches % 12;
+        return calculateFeetAndInches(centimeter,remainingInches);
     }
 }
