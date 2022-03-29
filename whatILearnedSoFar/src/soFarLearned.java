@@ -2,6 +2,8 @@ import java.sql.SQLOutput;
 
 public class soFarLearned {
 
+    private static final String INVALID_VALUE = "There is no Studnet with Roll No 0"; //constant variable where its value can't be changed
+
     public static void main(String[] arg) {
 
         calculateScore(true, 1000, 100, 10);
@@ -315,5 +317,14 @@ public class soFarLearned {
         double centimeter = (int) inches / 12;
         double remainingInches = (int) inches % 12;
         return calculateFeetAndInches(centimeter,remainingInches);
+    }
+
+    private static String isString(String name, int no){
+
+        if (no < 0){
+
+            return INVALID_VALUE;
+        }
+        return name;
     }
 }
