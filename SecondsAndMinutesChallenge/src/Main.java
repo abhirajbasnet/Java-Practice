@@ -9,6 +9,7 @@ public class Main {
 
         String seconds = getDurationString(5600);
         System.out.println(seconds);
+        System.out.println(getDurationString(-45, 100));
 
     }
 
