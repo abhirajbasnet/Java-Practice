@@ -1,4 +1,7 @@
 public class Main {
+
+    private static final String INVALID_VALUE_MESSAGE = "Invalid Value"; // introduced a constant variable
+
     public static void main(String[] args) {
 
       String duration =  getDurationString(65, 45); // can be also written as System.out.println(getDurationString(61, 0);
@@ -9,11 +12,11 @@ public class Main {
 
     }
 
-    public static String getDurationString(int minutes, int seconds ){
+    private static String getDurationString(int minutes, int seconds ){
 
         if (minutes < 0 || seconds < 0 || seconds > 59){
 
-            return "Invalid Value";
+            return INVALID_VALUE_MESSAGE;
         }
 
         int hours =  minutes / 60;
@@ -40,11 +43,11 @@ public class Main {
 
     }
 
-    public static String getDurationString(int seconds){
+    private static String getDurationString(int seconds){
 
         if(seconds < 0){
 
-            return "Invalid Value";
+            return INVALID_VALUE_MESSAGE;
         }
 
         int minutes = seconds / 60;
