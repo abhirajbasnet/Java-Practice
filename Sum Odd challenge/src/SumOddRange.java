@@ -11,21 +11,23 @@ public class SumOddRange {
         return false;
     }
 
-    public static int sumOdd(int start , int end){
+    public static int sumOdd(int start , int end) {
 
         int sum = 0;
-        for(int i = start; i <= end; i++){
 
-            System.out.println(i);
+        if (end >= start && start > 0) {
 
-            if(isOdd(i)){
+            for (int i = start; i <= end; i++) {
 
-                System.out.println(i);
-                System.out.println("xxxxxxxx");
-                sum = sum + i;
-                System.out.println(sum);
+                if (isOdd(i)) {
+
+                    //System.out.println(i);
+                    sum = sum + i;
+                }
+
             }
 
+            return sum;
 
         }
         return -1;
