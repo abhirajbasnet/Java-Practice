@@ -5,15 +5,21 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println(isEvenNumber(100));
-//
-//        int count =0;
-//        while (count != 5){
+
+//        int count = 1;
+//        while (count != 5) {
 //            System.out.println("Count value is " + count);
-//            count ++;
+//            count++;
+//        }
+
+        //Similar code to the while loop
+//        for (count = 1; count !=6; count ++){
+//
+//            System.out.println("Count value is " + count);
 //        }
 //
-//        //Alternate way of doing while
-//
+//      Alternate way of doing while
+//        count = 1;
 //        while (true){
 //            if(count == 6){
 //
@@ -23,26 +29,53 @@ public class Main {
 //            count ++;
 //
 //        }
-//        count =1;
+//        count = 1;
 //        do {
 //            System.out.println("Count value was " + count);
-//            count ++;
-//        } while(count !=6);
+//            count++;
+//            if (count > 100) {
+//                break;
+//            }
+//        } while (count != 6);
+
+//        int number = 4;
+//        int finishNumber = 20;
+//        while(number <= finishNumber){
+//            number++;
+//            if(!isEvenNumber(number)){
+//                continue;
+//            }
+//            System.out.println("Even number " + number);
+//        }
+
+        //challenge
+        int number = 4;
+        int finishNumber = 20;
+        int evenNumberFound = 0;
+        while(number <= finishNumber){
+            number++;
+            if(!isEvenNumber(number)){
+                continue;
+            }
+            System.out.println("Even number " + number);
+            evenNumberFound ++;
+
+            if(evenNumberFound >= 5){
+
+                break;
+            }
+
+        }
+        System.out.println("Total even numbers found = " + evenNumberFound);
 
     }
 
-    public static boolean isEvenNumber(int number){
-        int count = 0;
-            for (int i =1; i < number; i++ ){
+    public static boolean isEvenNumber(int number) {
 
-                if(i % 2 == 0) {
-                    System.out.println(i);
-                    count ++;
+        if (number % 2 == 0) {
 
-                }else if (count == 5){
-                    break;
-                }
+            return true;
         }
-            return false;
+        return false;
     }
 }
