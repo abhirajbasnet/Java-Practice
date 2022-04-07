@@ -14,7 +14,6 @@ public class LargestPrime {
             while (largestPrime < number) {
                 if (number % largestPrime != 0) {
                     largestPrime++;
-                    System.out.println(largestPrime);
                 } else {
                     number = number / largestPrime;
 
