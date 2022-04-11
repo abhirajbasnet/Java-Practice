@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a24386cb-5474-4df7-b374-813773a2e357" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javapractice/abhi/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javapractice/abhi/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javapractice/abhi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javapractice/abhi/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +114,7 @@
       <workItem from="1649561431114" duration="44000" />
       <workItem from="1649561573827" duration="1800000" />
       <workItem from="1649595800100" duration="204000" />
-      <workItem from="1649598784278" duration="2274000" />
+      <workItem from="1649598784278" duration="2669000" />
     </task>
     <servers />
   </component>
