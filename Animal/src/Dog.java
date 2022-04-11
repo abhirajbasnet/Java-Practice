@@ -6,7 +6,7 @@ public class Dog extends Animal {
     private int nose;
 
     public Dog(String name, int eyes, int legs, String animalSound, String fur, int tail, int ears, int nose) {
-        super(name, 1, 1, eyes, legs, animalSound);
+        super(name, 1, 1, eyes, legs);
         this.fur = fur;
         this.tail = tail;
         this.ears = ears;
@@ -40,16 +40,13 @@ public class Dog extends Animal {
 
     }
 
-    public void dogSound(String sound){
-
-        dogSound("Bark");
-        System.out.println("Dog sound is called");
+    public void dogSound(){
+        System.out.println("Barks");
     }
 
     @Override
-    public void setAnimalSound() {
-        dogSound("Bark");
-        super.setAnimalSound();
+    public void animalSound() {
+        dogSound();
     }
 
     @Override

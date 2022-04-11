@@ -5,15 +5,13 @@ public class Animal {
     private int body;
     private int eyes;
     private int legs;
-    private String animalSound;
 
-    public Animal(String name, int brain, int body, int eyes, int legs, String animalSound){
+    public Animal(String name, int brain, int body, int eyes, int legs){
         this.name = name;
         this.brain = brain;
         this.body = body;
         this.eyes = eyes;
         this.legs = legs;
-        this.animalSound = animalSound;
     }
 
     public String getName() {
@@ -36,14 +34,9 @@ public class Animal {
         return legs;
     }
 
-    public String getAnimalSound(){
-        return animalSound;
+    public void animalSound(){
+        System.out.println("Animal have animal sound");
     }
-
-    public void setAnimalSound(){
-        System.out.println("Animal makes noise");
-    }
-
     public void move(){
         System.out.println("Animal.move() called");
     }
