@@ -29,18 +29,17 @@ public class Dog extends Animal {
         return nose;
     }
 
-    public void move(int speed){
-        move(5);
+    public void move(int speed) {
         System.out.println("Dog is walking at " + speed);
     }
 
-    public void run(int speed){
+    public void run(int speed) {
         move(10);
         System.out.println("Dog is running at " + speed);
 
     }
 
-    public void dogSound(){
+    public void dogSound() {
         System.out.println("Barks");
     }
 
@@ -51,6 +50,6 @@ public class Dog extends Animal {
 
     @Override
     public void move() {
-        super.move();
+        move();
     }
 }
