@@ -7,7 +7,7 @@ public class Pig extends Animal{
     private String fodder;
 
     public Pig(String name, int brain, int body, int eyes, int legs, String color, double weight, int teeth, int ear, String fodder) {
-        super(name, 1, 1, eyes, legs);
+        super(name, 1, 1, 2, legs);
         this.color = color;
         this.weight = weight;
         this.teeth = teeth;
@@ -34,5 +34,18 @@ public class Pig extends Animal{
     public String getFodder() {
         return fodder;
     }
-    
+
+    public void walk(){
+        System.out.println("Pig is walking");
+    }
+
+    public void pigSound(){
+        System.out.println("Pig makes oink oink noise");
+    }
+
+    @Override
+    public void animalSound() {
+        this.pigSound();
+        super.animalSound();
+    }
 }

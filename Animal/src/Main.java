@@ -7,5 +7,8 @@ public class Main {
         dog.animalSound();
         dog.move(5);
 
+        Pig pig = new Pig("Rama", 1,1,2,4,"Pink", 60.89,33,2, "hay");
+        pig.animalSound();
+
 }
 }
