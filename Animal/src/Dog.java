@@ -30,22 +30,19 @@ public class Dog extends Animal {
     }
 
     public void move(int speed) {
-        System.out.println("Dog is walking at " + speed);
+        if (speed >= 6){
+            System.out.println("Dog is running at " + speed);
+        }else if(speed <=0){
+            System.out.println("Dog is resting");
+        }
+        else {
+            System.out.println("Dog is walking at " + speed);
+        }
     }
 
-    public void run(int speed) {
-        move(10);
-        System.out.println("Dog is running at " + speed);
-
-    }
-
-    public void dogSound() {
-        System.out.println(" Dog Barks");
-    }
-
-    @Override
     public void animalSound() {
-        super.animalSound();
-        dogSound();
+        System.out.println("Barks");
     }
+
+
 }

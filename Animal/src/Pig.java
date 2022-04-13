@@ -39,13 +39,9 @@ public class Pig extends Animal{
         System.out.println("Pig is walking");
     }
 
-    public void pigSound(){
-        System.out.println("Pig makes oink oink noise");
+    public void animalSound(){
+        System.out.println("Pig makes oink oink sound");
     }
 
-    @Override
-    public void animalSound() {
-        this.pigSound();
-        super.animalSound();
-    }
+
 }

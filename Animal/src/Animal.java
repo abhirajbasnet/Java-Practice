@@ -37,7 +37,7 @@ public class Animal {
     public void animalSound(){
         System.out.println("Animal have animal sound");
     }
-    public void move(){
+    public void move(int speed){
         System.out.println("Animal.move() called");
     }
 }
