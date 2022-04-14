@@ -10,5 +10,9 @@ public class Main {
         Pig pig = new Pig("Rama", 1,1,2,4,"Pink", 60.89,33,2, "hay");
         pig.animalSound();
 
+        Pigeon pigeon = new Pigeon(2,true,1,2,2);
+        pigeon.eatWorms();
+
+
 }
 }
