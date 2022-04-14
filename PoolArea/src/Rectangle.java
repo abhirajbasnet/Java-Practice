@@ -3,8 +3,16 @@ public class Rectangle {
     private double length;
 
     public Rectangle(double width, double length) {
-        this.width = width;
-        this.length = length;
+        if (width >=0.0){
+            this.width = width;
+        }else{
+            this.width = 0.0;
+        }
+        if (length >=0.0){
+            this.length = length;
+        }else{
+            this.length = 0.0;
+        }
     }
 
     public double getWidth() {
