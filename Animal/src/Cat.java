@@ -34,7 +34,7 @@ public class Cat extends Animal {
         this.eatFood();
         System.out.println("Cat uses its teeth");
     }
-    
+
 
 
 }
