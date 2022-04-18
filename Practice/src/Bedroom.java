@@ -20,8 +20,8 @@ public class Bedroom {
         this.lamp = lamp;
     }
 
-    public void getLamp(){
-        lamp.turnOn();
+    public Lamp lamp(){
+       return lamp;
     }
 
     public void makeBed(){
