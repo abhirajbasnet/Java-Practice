@@ -37,13 +37,13 @@
          super("Ferrari", 4);
      }
      public void startEngine(){
-         System.out.println("Ferrari Engine is starting...");
+         System.out.println( getClass().getSimpleName() + " Engine -> starting...");
      }
      public void accelerate(){
-         System.out.println("Pressing acceleration and ferrari is moving ");
+         System.out.println(getClass().getSimpleName()+ " -> Moving");
      }
      public void brake(){
-         System.out.println("Pressing brake. Ferrari is coming to the stationary");
+         System.out.println(getClass().getSimpleName() + " -> stopping");
      }
  }
 
@@ -52,13 +52,13 @@
          super("Tesla", 0);
      }
      public void startEngine(){
-         System.out.println("Tesla Engine is starting...");
+         System.out.println(getClass().getSimpleName() + " Engine -> starting...");
      }
      public void accelerate(){
-         System.out.println("Pressing acceleration and Tesla is moving ");
+         System.out.println(getClass().getSimpleName()+ " -> Moving");
      }
      public void brake(){
-         System.out.println("Pressing brake. Tesla is coming to the stationary");
+         System.out.println(getClass().getSimpleName() + " -> stopping");
      }
  }
 
@@ -67,13 +67,13 @@
          super("Honda", 4);
      }
      public void startEngine(){
-         System.out.println("Honda engine is starting...");
+         System.out.println(getClass().getSimpleName() + " Engine -> starting...");
      }
      public void accelerate(){
-         System.out.println("Pressing acceleration and Honda is moving ");
+         System.out.println(getClass().getSimpleName()+ " -> Moving");
      }
      public void brake(){
-         System.out.println("Pressing brake. Honda is coming to the stationary");
+         System.out.println(getClass().getSimpleName() + " -> stopping");
      }
  }
 
@@ -84,11 +84,21 @@ public class Main {
         Honda honda = new Honda();
         Tesla tesla = new Tesla();
         Car car = new Car("Lambourgini", 5);
+        
+        ferrari.startEngine();
+        tesla.startEngine();
+        honda.startEngine();
+        car.startEngine();
 
         ferrari.accelerate();
         tesla.accelerate();
         honda.accelerate();
         car.accelerate();
 
+        ferrari.brake();
+        tesla.brake();
+        honda.brake();
+        car.brake();
+        
     }
 }
