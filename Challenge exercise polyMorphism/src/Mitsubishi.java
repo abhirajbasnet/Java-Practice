@@ -1,7 +1,9 @@
 public class Mitsubishi extends Car {
-    public Mitsubishi() {
-        super(6, "Mitsubishi");
+
+    public Mitsubishi(int cylinders, String name) {
+        super(cylinders, name);
     }
+
     public String startEngine(){
         return getClass().getSimpleName() + " -> start Engine()";
     }
