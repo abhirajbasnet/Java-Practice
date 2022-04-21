@@ -1,6 +1,7 @@
 public class Hamburger {
     private String breadRollType;
     private String meatType;
+    private Addition addition;
 //    private String addition1; // lettuce
 //    private String addition2; // tomato
 //    private String addition3; // carrot
@@ -23,5 +24,13 @@ public class Hamburger {
 
     public int getPrice() {
         return price;
+    }
+    public double getAdditionPrice(){
+        System.out.println("The price of the " + addition.getAddition() + " is " + addition.getPrice());
+        return addition.getPrice();
+    }
+
+    public void total(){
+        System.out.println("The total purchase is ");
     }
 }
