@@ -7,16 +7,16 @@ public class Hamburger {
     //Four Possible addition
 
     private String addition1Name;
-    private Double addition1Price;
+    private double addition1Price;
 
     private String addition2Name;
-    private Double addition2Price;
+    private double addition2Price;
 
     private String addition3Name;
-    private Double addition3Price;
+    private double addition3Price;
 
     private String addition4Name;
-    private Double addition4Price;
+    private double addition4Price;
 
    
     
