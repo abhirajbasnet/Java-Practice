@@ -8,7 +8,7 @@ public class Array {
     public Array(String[] studentName, int[] studentRollNumber) {
         //{"Hari Regmi", "Harry Porter", "Christiano Ronaldo", "Lionel Messi"}
         //{1,2,3,4,5,6,7,8}
-        
+
         this.studentName = studentName;
         this.studentRollNumber = studentRollNumber;
     }
